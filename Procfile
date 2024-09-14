@@ -1,1 +1,1 @@
-web: python send-email.py $PORT
+web: python send-email.py

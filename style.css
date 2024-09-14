@@ -1,8 +1,23 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+section {
+  scroll-margin-top: 150px;
+}
+
 /* Navigation Bar */
+
+nav {
+  position:fixed;
+  width: 100%;
+  top: 0;
+}
 
 #home {
   background-color:  #7600bc;
@@ -40,7 +55,6 @@ body {
 .profile_name {
   float: left;
   padding-left: 2cm;
-  /* Add the styles here */
   color: lightcyan;
   font-size: 25px;
 }
@@ -59,13 +73,16 @@ body {
   float:left;
 }
 
+.text_space {
+  height: 100px;
+}
+
 /* Titles */
 
 h2 {
   text-align: justify;
   font-size: 50px;
   text-align: center;
-  float: left;
   color: #7600bc;
   margin: 30px;
   margin-left: 60px;
@@ -73,21 +90,11 @@ h2 {
   margin-bottom: 0px;
 }
 
-.introduction {
-  text-align: justify;
-  font-size: 30px;
-  text-align: center;
-  float: left;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  animation-duration: 5s;
-  position: relative;
-}
-
 /* Used in the About Me sections */
 
 .container {
   display: flex;
+  margin-top: 150px;
 }
 
 /* About Me */
@@ -193,11 +200,11 @@ h2 {
 }
 
 .repo_link {
-  margin-left: 40px;
   background-color: white;
   color:blue;
   transition: color 700ms ease;
   transition: background-color 700ms ease;
+  text-decoration: none;
 }
 
 .repo_link:hover {
@@ -239,6 +246,9 @@ h2 {
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
+
+
+
 
 /* Scroll to Top Button */
 
@@ -300,7 +310,7 @@ h2 {
   margin-left: 25%;
 }
 
-/* Recommendation Form */
+/* Contact Form */
 
 input, textarea {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
@@ -317,6 +327,11 @@ fieldset {
   margin-right: 50px;   
   border: thin solid white;
   width: 50%;
+}
+
+.textbox {
+  width:200px;
+  margin-left: 300px;
 }
 
 /* Buttons */

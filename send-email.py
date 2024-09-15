@@ -27,7 +27,7 @@ def sendEmail():
     PASSWORD = os.environ.get('SENDER_PASSWORD')
     MESSAGE = "From: " + FROM_EMAIL + "\r\n" 
     MESSAGE += "To: " + TO_EMAIL + "\r\n"
-    MESSAGE += "Reply-To: {name}".format(name=name) + "\r\n"
+    MESSAGE += "Reply-To: {email}".format(email=email) + "\r\n"
     MESSAGE += "Subject: " + "Question" + "\r\n"
     MESSAGE += "\r\n"
     MESSAGE += "Hi There Ryan" + "\r\n"

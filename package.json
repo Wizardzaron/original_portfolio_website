@@ -1,11 +1,5 @@
 {
-  "name": "front_end_side",
-  "version": "1.0.0",
-  "description": "The front-end side of my web application, meant to show off my portfolio projects",
-  "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Ryan Haddadi",
-  "license": "ISC"
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }

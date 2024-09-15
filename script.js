@@ -7,6 +7,7 @@ function sendEmail() {
     console.log("New recommendation added");
     showPopup(true);
 
+
     const url = process.env.NEXT_PUBLIC_LOCAL_HOST_URL  + "/sendemail"
 
     const encodedURL = encodeURI(`${url}`)

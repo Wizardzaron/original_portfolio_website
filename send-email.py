@@ -8,8 +8,6 @@ app = Flask(__name__)
 
 CORS(app, supports_credentials=True)
 
-
-
 @app.route('/sendemail', methods=['POST'])
 def sendEmail():
     msg = jsonify("Will it work?")
@@ -19,6 +17,7 @@ def sendEmail():
     contact = data.get('contact')
     email = data.get('email')
     name = data.get('name')
+    
     
     #Gmail SMTP server does not allow for the change of who the email was sent from, this was a built in limitation
     HOST = "smtp.gmail.com"

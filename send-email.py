@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import os
 import smtplib
 from flask_cors import CORS
@@ -6,6 +6,12 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 CORS(app, supports_credentials=True)
+
+@app.route('/')
+def index():
+    # Serve the front-end HTML file
+    return render_template('index.html')
+
 
 @app.route('/sendemail', methods=['POST'])
 def sendEmail():

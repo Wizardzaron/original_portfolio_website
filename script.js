@@ -7,8 +7,7 @@ function sendEmail() {
     console.log("New recommendation added");
     showPopup(true);
 
-
-    const url = process.env.NEXT_PUBLIC_LOCAL_HOST_URL  + "/sendemail"
+    const url = "https://port-website-backend-e4e874050751.herokuapp.com/sendemail"
 
     const encodedURL = encodeURI(`${url}`)
     

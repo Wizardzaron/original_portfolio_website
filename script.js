@@ -7,6 +7,9 @@ function sendEmail() {
     console.log("New recommendation added");
     showPopup(true);
 
+
+    //so you can't use environment variables on a front-end application, you can only use them when the application is running on a server
+
     const url = "https://port-website-backend-e4e874050751.herokuapp.com/sendemail"
 
     const encodedURL = encodeURI(`${url}`)
